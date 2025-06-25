@@ -1,0 +1,16 @@
+plugins {
+ id 'com.axelor.app'
+}
+apply from: "../libs.gradle"
+apply from: "../version.gradle"
+
+apply {
+	version = openSuiteVersion
+}
+axelor {
+ title = 'Axelor demo'
+ description = 'Axelor demo for testing'
+}
+dependencies {
+	api project(":modules:axelor-base")
+}

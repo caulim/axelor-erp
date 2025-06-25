@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views
+  https://axelor.com/xml/ns/object-views/object-views_7.4.xsd">
+
+  <menuitem name="menu-demo-book" title="Address Book" order="1000"
+    if="__config__.app.isApp('demo')" icon="app-demo"/>
+
+  <menuitem name="menu-demo-friends" parent="menu-demo-book" title="Demo" action="demo.all"/>
+
+  <action-view name="demo.all" title="demos" model="com.axelor.apps.demo.db.Contact">
+    <view type="grid" name="demo-grid"/>
+    <view type="form" name="demo-form"/>
+  </action-view>
+
+</object-views>
