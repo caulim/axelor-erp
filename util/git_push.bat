@@ -2,7 +2,7 @@
 IF "%~1"=="" (
 set /p commitMsg=Enter commit message: 
 ) ELSE (
-commitMsg = %1
+set commitMsg = %1
 )
 
 @ECHO ON
