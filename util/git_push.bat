@@ -1,9 +1,18 @@
+@ECHO OFF
+IF "%~1"=="" (
+set /p commitMsg=Enter commit message: 
+) ELSE (
+commitMsg = %1
+)
+
+@ECHO ON
+
 cd ..\modules\axelor-open-suite
 git add -A
-git commit -m %1
+git commit -m "%commitMsg%"
 git push origin lim
 
 cd ..\..
 git add .
-git commit -m %1
+git commit -m "%commitMsg%"
 git push origin lim
