@@ -1,9 +1,9 @@
 cd ..\modules\axelor-open-suite
 git add -A
 git commit -m %1
-git push origin main
+git push origin lim
 
 cd ..\..
-git add modules\axelor-open-suite
+git add .
 git commit -m %1
-git push origin main
+git push origin lim
