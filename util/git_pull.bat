@@ -1,6 +1,7 @@
 @ECHO OFF
 IF "%~1"=="" (
-set /p gitBranch=Which branch: 
+rem set /p gitBranch=Which branch: 
+set gitBranch=lim
 ) ELSE (
 set gitBranch=%~1
 )
