@@ -48,6 +48,7 @@ dependencies {
   gradle.appModules.each { dir ->
     implementation project(":modules:$dir.name")
   }
+  implementation project(':ext-modules:demo')
 }
 
 apply from: 'gradle/style.gradle'

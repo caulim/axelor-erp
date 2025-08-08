@@ -62,3 +62,6 @@ modules.each { dir ->
   include "modules:$dir.name"
   project(":modules:$dir.name").projectDir = dir
 }
+
+include ':ext-modules:demo'
+project(':ext-modules:demo').projectDir = new File('../ext-modules/demo')
